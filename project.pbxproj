@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7956DA42151023AB00318F62 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7956DA41151023AA00318F62 /* UIKit.framework */; };
+		7956DA44151023AB00318F62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7956DA43151023AB00318F62 /* Foundation.framework */; };
+		7956DA46151023AB00318F62 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7956DA45151023AB00318F62 /* CoreGraphics.framework */; };
+		7956DA48151023AB00318F62 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7956DA47151023AB00318F62 /* CoreData.framework */; };
+		7956DA4E151023AB00318F62 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7956DA4C151023AB00318F62 /* InfoPlist.strings */; };
+		7956DA5F151023AB00318F62 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7956DA5E151023AB00318F62 /* SenTestingKit.framework */; };
+		7956DA60151023AB00318F62 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7956DA41151023AA00318F62 /* UIKit.framework */; };
+		7956DA61151023AB00318F62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7956DA43151023AB00318F62 /* Foundation.framework */; };
+		7956DA62151023AB00318F62 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7956DA47151023AB00318F62 /* CoreData.framework */; };
+		7956DA6A151023AB00318F62 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7956DA68151023AB00318F62 /* InfoPlist.strings */; };
+		7956DA6D151023AB00318F62 /* Bike_LapsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7956DA6C151023AB00318F62 /* Bike_LapsTests.m */; };
+		7956DA77151023FE00318F62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7956DA76151023FE00318F62 /* main.m */; };
+		7956DA9D1510251900318F62 /* checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 7956DA931510251900318F62 /* checkmark.png */; };
+		7956DA9E1510251900318F62 /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = 7956DA941510251900318F62 /* green.png */; };
+		7956DA9F1510251900318F62 /* whiteCheckmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 7956DA951510251900318F62 /* whiteCheckmark.png */; };
+		7956DAA01510251900318F62 /* invisibleCheckmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 7956DA961510251900318F62 /* invisibleCheckmark.png */; };
+		7956DAA11510251900318F62 /* green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7956DA971510251900318F62 /* green@2x.png */; };
+		7956DAA21510251900318F62 /* grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 7956DA981510251900318F62 /* grey.png */; };
+		7956DAA31510251900318F62 /* grey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7956DA991510251900318F62 /* grey@2x.png */; };
+		7956DAA41510251900318F62 /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = 7956DA9A1510251900318F62 /* red.png */; };
+		7956DAA51510251900318F62 /* red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7956DA9B1510251900318F62 /* red@2x.png */; };
+		7956DAC11510253700318F62 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7956DAA81510253700318F62 /* AppDelegate.m */; };
+		7956DAC21510253700318F62 /* Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = 7956DAAA1510253700318F62 /* Alert.m */; };
+		7956DAC31510253700318F62 /* LapsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7956DAAC1510253700318F62 /* LapsViewController.m */; };
+		7956DAC41510253700318F62 /* WorkoutTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7956DAAF1510253700318F62 /* WorkoutTableViewController.m */; };
+		7956DAC51510253700318F62 /* WorkoutTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7956DAB01510253700318F62 /* WorkoutTableViewController.xib */; };
+		7956DAC61510253700318F62 /* PathMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7956DAB11510253700318F62 /* PathMapViewController.m */; };
+		7956DAC71510253700318F62 /* PathMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7956DAB21510253700318F62 /* PathMapViewController.xib */; };
+		7956DAC81510253700318F62 /* CourseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7956DAB41510253700318F62 /* CourseTableViewController.m */; };
+		7956DAC91510253700318F62 /* CourseTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7956DAB51510253700318F62 /* CourseTableViewController.xib */; };
+		7956DACA1510253700318F62 /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 7956DAB71510253700318F62 /* Logger.m */; };
+		7956DACB1510253700318F62 /* LogarithmicSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 7956DAB91510253700318F62 /* LogarithmicSlider.m */; };
+		7956DACC1510253700318F62 /* CoursesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7956DABB1510253700318F62 /* CoursesTableViewController.m */; };
+		7956DACD1510253700318F62 /* CoursesTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7956DABC1510253700318F62 /* CoursesTableViewController.xib */; };
+		7956DACE1510253700318F62 /* LocationCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = 7956DABE1510253700318F62 /* LocationCollector.m */; };
+		7956DACF1510253700318F62 /* LapsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7956DABF1510253700318F62 /* LapsViewController.xib */; };
+		7956DAD01510253700318F62 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7956DAC01510253700318F62 /* MainWindow.xib */; };
+		7956DAD21510258D00318F62 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7956DAD11510258D00318F62 /* CoreLocation.framework */; };
+		7956DAD41510259400318F62 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7956DAD31510259400318F62 /* MapKit.framework */; };
+		7956DAD6151025A800318F62 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7956DAD5151025A800318F62 /* MediaPlayer.framework */; };
+		7960225D151D70F8002E87DD /* lock.png in Resources */ = {isa = PBXBuildFile; fileRef = 7960225B151D70F8002E87DD /* lock.png */; };
+		7960225E151D70F8002E87DD /* lock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7960225C151D70F8002E87DD /* lock@2x.png */; };
+		7963EDAC151029AF00DC68BC /* ObjectGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 7963EDA0151029AF00DC68BC /* ObjectGraph.m */; };
+		7963EDAD151029AF00DC68BC /* Workout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7963EDA2151029AF00DC68BC /* Workout.m */; };
+		7963EDAE151029AF00DC68BC /* Path.m in Sources */ = {isa = PBXBuildFile; fileRef = 7963EDA4151029AF00DC68BC /* Path.m */; };
+		7963EDAF151029AF00DC68BC /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 7963EDA6151029AF00DC68BC /* Location.m */; };
+		7963EDB0151029AF00DC68BC /* Lap.m in Sources */ = {isa = PBXBuildFile; fileRef = 7963EDA8151029AF00DC68BC /* Lap.m */; };
+		7963EDB1151029AF00DC68BC /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 7963EDAA151029AF00DC68BC /* Course.m */; };
+		7963EDC11510332600DC68BC /* Bike-Laps.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 7963EDC01510332600DC68BC /* Bike-Laps.xcdatamodel */; };
+		7963EDC31510468400DC68BC /* wheel57.png in Resources */ = {isa = PBXBuildFile; fileRef = 7963EDC21510468400DC68BC /* wheel57.png */; };
+		7963EDC5151046CC00DC68BC /* wheel114.png in Resources */ = {isa = PBXBuildFile; fileRef = 7963EDC4151046CC00DC68BC /* wheel114.png */; };
+		79A935A81522CCCE00352B01 /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A935A21522CCCE00352B01 /* left.png */; };
+		79A935A91522CCCE00352B01 /* left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A935A31522CCCE00352B01 /* left@2x.png */; };
+		79A935AA1522CCCE00352B01 /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A935A41522CCCE00352B01 /* right.png */; };
+		79A935AB1522CCCE00352B01 /* right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A935A51522CCCE00352B01 /* right@2x.png */; };
+		79A935AC1522CCCE00352B01 /* thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A935A61522CCCE00352B01 /* thumb.png */; };
+		79A935AD1522CCCE00352B01 /* thumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A935A71522CCCE00352B01 /* thumb@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7956DA63151023AB00318F62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7956DA34151023AA00318F62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7956DA3C151023AA00318F62;
+			remoteInfo = "Bike Laps";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7925B8BD15214F05002CF5BE /* BikeLaps.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BikeLaps.h; sourceTree = "<group>"; };
+		7956DA3D151023AA00318F62 /* Bike Laps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bike Laps.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7956DA41151023AA00318F62 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7956DA43151023AB00318F62 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7956DA45151023AB00318F62 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7956DA47151023AB00318F62 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7956DA4B151023AB00318F62 /* Bike Laps-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Bike Laps-Info.plist"; sourceTree = "<group>"; };
+		7956DA4D151023AB00318F62 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7956DA51151023AB00318F62 /* Bike Laps-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bike Laps-Prefix.pch"; sourceTree = "<group>"; };
+		7956DA5D151023AB00318F62 /* Bike LapsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bike LapsTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7956DA5E151023AB00318F62 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		7956DA67151023AB00318F62 /* Bike LapsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Bike LapsTests-Info.plist"; sourceTree = "<group>"; };
+		7956DA69151023AB00318F62 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7956DA6B151023AB00318F62 /* Bike_LapsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bike_LapsTests.h; sourceTree = "<group>"; };
+		7956DA6C151023AB00318F62 /* Bike_LapsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bike_LapsTests.m; sourceTree = "<group>"; };
+		7956DA76151023FE00318F62 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7956DA931510251900318F62 /* checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmark.png; sourceTree = "<group>"; };
+		7956DA941510251900318F62 /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green.png; sourceTree = "<group>"; };
+		7956DA951510251900318F62 /* whiteCheckmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteCheckmark.png; sourceTree = "<group>"; };
+		7956DA961510251900318F62 /* invisibleCheckmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = invisibleCheckmark.png; sourceTree = "<group>"; };
+		7956DA971510251900318F62 /* green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "green@2x.png"; sourceTree = "<group>"; };
+		7956DA981510251900318F62 /* grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grey.png; sourceTree = "<group>"; };
+		7956DA991510251900318F62 /* grey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grey@2x.png"; sourceTree = "<group>"; };
+		7956DA9A1510251900318F62 /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
+		7956DA9B1510251900318F62 /* red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red@2x.png"; sourceTree = "<group>"; };
+		7956DAA61510253700318F62 /* insist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = insist.h; sourceTree = "<group>"; };
+		7956DAA71510253700318F62 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7956DAA81510253700318F62 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7956DAA91510253700318F62 /* Alert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alert.h; sourceTree = "<group>"; };
+		7956DAAA1510253700318F62 /* Alert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alert.m; sourceTree = "<group>"; };
+		7956DAAB1510253700318F62 /* LapsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LapsViewController.h; sourceTree = "<group>"; };
+		7956DAAC1510253700318F62 /* LapsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LapsViewController.m; sourceTree = "<group>"; };
+		7956DAAD1510253700318F62 /* PathMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathMapViewController.h; sourceTree = "<group>"; };
+		7956DAAE1510253700318F62 /* WorkoutTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkoutTableViewController.h; sourceTree = "<group>"; };
+		7956DAAF1510253700318F62 /* WorkoutTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkoutTableViewController.m; sourceTree = "<group>"; };
+		7956DAB01510253700318F62 /* WorkoutTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkoutTableViewController.xib; sourceTree = "<group>"; };
+		7956DAB11510253700318F62 /* PathMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PathMapViewController.m; sourceTree = "<group>"; };
+		7956DAB21510253700318F62 /* PathMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PathMapViewController.xib; sourceTree = "<group>"; };
+		7956DAB31510253700318F62 /* CourseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseTableViewController.h; sourceTree = "<group>"; };
+		7956DAB41510253700318F62 /* CourseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseTableViewController.m; sourceTree = "<group>"; };
+		7956DAB51510253700318F62 /* CourseTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CourseTableViewController.xib; sourceTree = "<group>"; };
+		7956DAB61510253700318F62 /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
+		7956DAB71510253700318F62 /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
+		7956DAB81510253700318F62 /* LogarithmicSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogarithmicSlider.h; sourceTree = "<group>"; };
+		7956DAB91510253700318F62 /* LogarithmicSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogarithmicSlider.m; sourceTree = "<group>"; };
+		7956DABA1510253700318F62 /* CoursesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoursesTableViewController.h; sourceTree = "<group>"; };
+		7956DABB1510253700318F62 /* CoursesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursesTableViewController.m; sourceTree = "<group>"; };
+		7956DABC1510253700318F62 /* CoursesTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoursesTableViewController.xib; sourceTree = "<group>"; };
+		7956DABD1510253700318F62 /* LocationCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationCollector.h; sourceTree = "<group>"; };
+		7956DABE1510253700318F62 /* LocationCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationCollector.m; sourceTree = "<group>"; };
+		7956DABF1510253700318F62 /* LapsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LapsViewController.xib; sourceTree = "<group>"; };
+		7956DAC01510253700318F62 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		7956DAD11510258D00318F62 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7956DAD31510259400318F62 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7956DAD5151025A800318F62 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		7960225B151D70F8002E87DD /* lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lock.png; sourceTree = "<group>"; };
+		7960225C151D70F8002E87DD /* lock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lock@2x.png"; sourceTree = "<group>"; };
+		7963ED9F151029AF00DC68BC /* ObjectGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectGraph.h; sourceTree = "<group>"; };
+		7963EDA0151029AF00DC68BC /* ObjectGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectGraph.m; sourceTree = "<group>"; };
+		7963EDA1151029AF00DC68BC /* Workout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Workout.h; sourceTree = "<group>"; };
+		7963EDA2151029AF00DC68BC /* Workout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Workout.m; sourceTree = "<group>"; };
+		7963EDA3151029AF00DC68BC /* Path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Path.h; sourceTree = "<group>"; };
+		7963EDA4151029AF00DC68BC /* Path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Path.m; sourceTree = "<group>"; };
+		7963EDA5151029AF00DC68BC /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		7963EDA6151029AF00DC68BC /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		7963EDA7151029AF00DC68BC /* Lap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lap.h; sourceTree = "<group>"; };
+		7963EDA8151029AF00DC68BC /* Lap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lap.m; sourceTree = "<group>"; };
+		7963EDA9151029AF00DC68BC /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
+		7963EDAA151029AF00DC68BC /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
+		7963EDC01510332600DC68BC /* Bike-Laps.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Bike-Laps.xcdatamodel"; sourceTree = "<group>"; };
+		7963EDC21510468400DC68BC /* wheel57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheel57.png; sourceTree = "<group>"; };
+		7963EDC4151046CC00DC68BC /* wheel114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheel114.png; sourceTree = "<group>"; };
+		79A935A21522CCCE00352B01 /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left.png; sourceTree = "<group>"; };
+		79A935A31522CCCE00352B01 /* left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left@2x.png"; sourceTree = "<group>"; };
+		79A935A41522CCCE00352B01 /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
+		79A935A51522CCCE00352B01 /* right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right@2x.png"; sourceTree = "<group>"; };
+		79A935A61522CCCE00352B01 /* thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumb.png; sourceTree = "<group>"; };
+		79A935A71522CCCE00352B01 /* thumb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumb@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7956DA3A151023AA00318F62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7956DA42151023AB00318F62 /* UIKit.framework in Frameworks */,
+				7956DA44151023AB00318F62 /* Foundation.framework in Frameworks */,
+				7956DA46151023AB00318F62 /* CoreGraphics.framework in Frameworks */,
+				7956DA48151023AB00318F62 /* CoreData.framework in Frameworks */,
+				7956DAD21510258D00318F62 /* CoreLocation.framework in Frameworks */,
+				7956DAD41510259400318F62 /* MapKit.framework in Frameworks */,
+				7956DAD6151025A800318F62 /* MediaPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7956DA59151023AB00318F62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7956DA5F151023AB00318F62 /* SenTestingKit.framework in Frameworks */,
+				7956DA60151023AB00318F62 /* UIKit.framework in Frameworks */,
+				7956DA61151023AB00318F62 /* Foundation.framework in Frameworks */,
+				7956DA62151023AB00318F62 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7956DA32151023AA00318F62 = {
+			isa = PBXGroup;
+			children = (
+				7963EDC4151046CC00DC68BC /* wheel114.png */,
+				7963EDC21510468400DC68BC /* wheel57.png */,
+				7956DA49151023AB00318F62 /* Bike Laps */,
+				7956DA65151023AB00318F62 /* Bike LapsTests */,
+				7956DA40151023AA00318F62 /* Frameworks */,
+				7956DA3E151023AA00318F62 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7956DA3E151023AA00318F62 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7956DA3D151023AA00318F62 /* Bike Laps.app */,
+				7956DA5D151023AB00318F62 /* Bike LapsTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7956DA40151023AA00318F62 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7956DAD5151025A800318F62 /* MediaPlayer.framework */,
+				7956DAD31510259400318F62 /* MapKit.framework */,
+				7956DAD11510258D00318F62 /* CoreLocation.framework */,
+				7956DA41151023AA00318F62 /* UIKit.framework */,
+				7956DA43151023AB00318F62 /* Foundation.framework */,
+				7956DA45151023AB00318F62 /* CoreGraphics.framework */,
+				7956DA47151023AB00318F62 /* CoreData.framework */,
+				7956DA5E151023AB00318F62 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7956DA49151023AB00318F62 /* Bike Laps */ = {
+			isa = PBXGroup;
+			children = (
+				7956DAA61510253700318F62 /* insist.h */,
+				7956DAA71510253700318F62 /* AppDelegate.h */,
+				7956DAA81510253700318F62 /* AppDelegate.m */,
+				7956DAA91510253700318F62 /* Alert.h */,
+				7956DAAA1510253700318F62 /* Alert.m */,
+				7956DAAB1510253700318F62 /* LapsViewController.h */,
+				7956DAAC1510253700318F62 /* LapsViewController.m */,
+				7925B8BD15214F05002CF5BE /* BikeLaps.h */,
+				7956DABF1510253700318F62 /* LapsViewController.xib */,
+				7956DAAD1510253700318F62 /* PathMapViewController.h */,
+				7956DAAE1510253700318F62 /* WorkoutTableViewController.h */,
+				7956DAAF1510253700318F62 /* WorkoutTableViewController.m */,
+				7956DAB01510253700318F62 /* WorkoutTableViewController.xib */,
+				7956DAB11510253700318F62 /* PathMapViewController.m */,
+				7956DAB21510253700318F62 /* PathMapViewController.xib */,
+				7956DAB31510253700318F62 /* CourseTableViewController.h */,
+				7956DAB41510253700318F62 /* CourseTableViewController.m */,
+				7956DAB51510253700318F62 /* CourseTableViewController.xib */,
+				7956DAB61510253700318F62 /* Logger.h */,
+				7956DAB71510253700318F62 /* Logger.m */,
+				7956DAB81510253700318F62 /* LogarithmicSlider.h */,
+				7956DAB91510253700318F62 /* LogarithmicSlider.m */,
+				7956DABA1510253700318F62 /* CoursesTableViewController.h */,
+				7956DABB1510253700318F62 /* CoursesTableViewController.m */,
+				7956DABC1510253700318F62 /* CoursesTableViewController.xib */,
+				7956DABD1510253700318F62 /* LocationCollector.h */,
+				7956DABE1510253700318F62 /* LocationCollector.m */,
+				7956DAC01510253700318F62 /* MainWindow.xib */,
+				7956DA7C151024D900318F62 /* Object Graph */,
+				7956DA4A151023AB00318F62 /* Supporting Files */,
+			);
+			path = "Bike Laps";
+			sourceTree = "<group>";
+		};
+		7956DA4A151023AB00318F62 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7956DA931510251900318F62 /* checkmark.png */,
+				7956DA941510251900318F62 /* green.png */,
+				7956DA951510251900318F62 /* whiteCheckmark.png */,
+				7956DA961510251900318F62 /* invisibleCheckmark.png */,
+				7956DA971510251900318F62 /* green@2x.png */,
+				79A935A21522CCCE00352B01 /* left.png */,
+				79A935A31522CCCE00352B01 /* left@2x.png */,
+				79A935A41522CCCE00352B01 /* right.png */,
+				79A935A51522CCCE00352B01 /* right@2x.png */,
+				79A935A61522CCCE00352B01 /* thumb.png */,
+				79A935A71522CCCE00352B01 /* thumb@2x.png */,
+				7956DA981510251900318F62 /* grey.png */,
+				7956DA991510251900318F62 /* grey@2x.png */,
+				7956DA9A1510251900318F62 /* red.png */,
+				7956DA9B1510251900318F62 /* red@2x.png */,
+				7960225B151D70F8002E87DD /* lock.png */,
+				7960225C151D70F8002E87DD /* lock@2x.png */,
+				7956DA4B151023AB00318F62 /* Bike Laps-Info.plist */,
+				7956DA76151023FE00318F62 /* main.m */,
+				7956DA4C151023AB00318F62 /* InfoPlist.strings */,
+				7956DA51151023AB00318F62 /* Bike Laps-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7956DA65151023AB00318F62 /* Bike LapsTests */ = {
+			isa = PBXGroup;
+			children = (
+				7956DA6B151023AB00318F62 /* Bike_LapsTests.h */,
+				7956DA6C151023AB00318F62 /* Bike_LapsTests.m */,
+				7956DA66151023AB00318F62 /* Supporting Files */,
+			);
+			path = "Bike LapsTests";
+			sourceTree = "<group>";
+		};
+		7956DA66151023AB00318F62 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7956DA67151023AB00318F62 /* Bike LapsTests-Info.plist */,
+				7956DA68151023AB00318F62 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7956DA7C151024D900318F62 /* Object Graph */ = {
+			isa = PBXGroup;
+			children = (
+				7963EDC01510332600DC68BC /* Bike-Laps.xcdatamodel */,
+				7963ED9F151029AF00DC68BC /* ObjectGraph.h */,
+				7963EDA0151029AF00DC68BC /* ObjectGraph.m */,
+				7963EDA1151029AF00DC68BC /* Workout.h */,
+				7963EDA2151029AF00DC68BC /* Workout.m */,
+				7963EDA3151029AF00DC68BC /* Path.h */,
+				7963EDA4151029AF00DC68BC /* Path.m */,
+				7963EDA5151029AF00DC68BC /* Location.h */,
+				7963EDA6151029AF00DC68BC /* Location.m */,
+				7963EDA7151029AF00DC68BC /* Lap.h */,
+				7963EDA8151029AF00DC68BC /* Lap.m */,
+				7963EDA9151029AF00DC68BC /* Course.h */,
+				7963EDAA151029AF00DC68BC /* Course.m */,
+			);
+			name = "Object Graph";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7956DA3C151023AA00318F62 /* Bike Laps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7956DA70151023AB00318F62 /* Build configuration list for PBXNativeTarget "Bike Laps" */;
+			buildPhases = (
+				7956DA39151023AA00318F62 /* Sources */,
+				7956DA3A151023AA00318F62 /* Frameworks */,
+				7956DA3B151023AA00318F62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bike Laps";
+			productName = "Bike Laps";
+			productReference = 7956DA3D151023AA00318F62 /* Bike Laps.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7956DA5C151023AB00318F62 /* Bike LapsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7956DA73151023AB00318F62 /* Build configuration list for PBXNativeTarget "Bike LapsTests" */;
+			buildPhases = (
+				7956DA58151023AB00318F62 /* Sources */,
+				7956DA59151023AB00318F62 /* Frameworks */,
+				7956DA5A151023AB00318F62 /* Resources */,
+				7956DA5B151023AB00318F62 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7956DA64151023AB00318F62 /* PBXTargetDependency */,
+			);
+			name = "Bike LapsTests";
+			productName = "Bike LapsTests";
+			productReference = 7956DA5D151023AB00318F62 /* Bike LapsTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7956DA34151023AA00318F62 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 7956DA37151023AA00318F62 /* Build configuration list for PBXProject "Bike Laps" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7956DA32151023AA00318F62;
+			productRefGroup = 7956DA3E151023AA00318F62 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7956DA3C151023AA00318F62 /* Bike Laps */,
+				7956DA5C151023AB00318F62 /* Bike LapsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7956DA3B151023AA00318F62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7956DA4E151023AB00318F62 /* InfoPlist.strings in Resources */,
+				7956DA9D1510251900318F62 /* checkmark.png in Resources */,
+				7956DA9E1510251900318F62 /* green.png in Resources */,
+				7956DA9F1510251900318F62 /* whiteCheckmark.png in Resources */,
+				7956DAA01510251900318F62 /* invisibleCheckmark.png in Resources */,
+				7956DAA11510251900318F62 /* green@2x.png in Resources */,
+				7956DAA21510251900318F62 /* grey.png in Resources */,
+				7956DAA31510251900318F62 /* grey@2x.png in Resources */,
+				7956DAA41510251900318F62 /* red.png in Resources */,
+				7956DAA51510251900318F62 /* red@2x.png in Resources */,
+				7956DAC51510253700318F62 /* WorkoutTableViewController.xib in Resources */,
+				7956DAC71510253700318F62 /* PathMapViewController.xib in Resources */,
+				7956DAC91510253700318F62 /* CourseTableViewController.xib in Resources */,
+				7956DACD1510253700318F62 /* CoursesTableViewController.xib in Resources */,
+				7956DACF1510253700318F62 /* LapsViewController.xib in Resources */,
+				7956DAD01510253700318F62 /* MainWindow.xib in Resources */,
+				7963EDC31510468400DC68BC /* wheel57.png in Resources */,
+				7963EDC5151046CC00DC68BC /* wheel114.png in Resources */,
+				7960225D151D70F8002E87DD /* lock.png in Resources */,
+				7960225E151D70F8002E87DD /* lock@2x.png in Resources */,
+				79A935A81522CCCE00352B01 /* left.png in Resources */,
+				79A935A91522CCCE00352B01 /* left@2x.png in Resources */,
+				79A935AA1522CCCE00352B01 /* right.png in Resources */,
+				79A935AB1522CCCE00352B01 /* right@2x.png in Resources */,
+				79A935AC1522CCCE00352B01 /* thumb.png in Resources */,
+				79A935AD1522CCCE00352B01 /* thumb@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7956DA5A151023AB00318F62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7956DA6A151023AB00318F62 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7956DA5B151023AB00318F62 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7956DA39151023AA00318F62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7956DA77151023FE00318F62 /* main.m in Sources */,
+				7956DAC11510253700318F62 /* AppDelegate.m in Sources */,
+				7956DAC21510253700318F62 /* Alert.m in Sources */,
+				7956DAC31510253700318F62 /* LapsViewController.m in Sources */,
+				7956DAC41510253700318F62 /* WorkoutTableViewController.m in Sources */,
+				7956DAC61510253700318F62 /* PathMapViewController.m in Sources */,
+				7956DAC81510253700318F62 /* CourseTableViewController.m in Sources */,
+				7956DACA1510253700318F62 /* Logger.m in Sources */,
+				7956DACB1510253700318F62 /* LogarithmicSlider.m in Sources */,
+				7956DACC1510253700318F62 /* CoursesTableViewController.m in Sources */,
+				7956DACE1510253700318F62 /* LocationCollector.m in Sources */,
+				7963EDAC151029AF00DC68BC /* ObjectGraph.m in Sources */,
+				7963EDAD151029AF00DC68BC /* Workout.m in Sources */,
+				7963EDAE151029AF00DC68BC /* Path.m in Sources */,
+				7963EDAF151029AF00DC68BC /* Location.m in Sources */,
+				7963EDB0151029AF00DC68BC /* Lap.m in Sources */,
+				7963EDB1151029AF00DC68BC /* Course.m in Sources */,
+				7963EDC11510332600DC68BC /* Bike-Laps.xcdatamodel in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7956DA58151023AB00318F62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7956DA6D151023AB00318F62 /* Bike_LapsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7956DA64151023AB00318F62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7956DA3C151023AA00318F62 /* Bike Laps */;
+			targetProxy = 7956DA63151023AB00318F62 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7956DA4C151023AB00318F62 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7956DA4D151023AB00318F62 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7956DA68151023AB00318F62 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7956DA69151023AB00318F62 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7956DA6E151023AB00318F62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7956DA6F151023AB00318F62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: david finucane";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "637A0E2C-8A76-4826-AC9A-4F425445C5A7";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7956DA71151023AB00318F62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bike Laps/Bike Laps-Prefix.pch";
+				INFOPLIST_FILE = "Bike Laps/Bike Laps-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7956DA72151023AB00318F62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bike Laps/Bike Laps-Prefix.pch";
+				INFOPLIST_FILE = "Bike Laps/Bike Laps-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7956DA74151023AB00318F62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Bike Laps.app/Bike Laps";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bike Laps/Bike Laps-Prefix.pch";
+				INFOPLIST_FILE = "Bike LapsTests/Bike LapsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		7956DA75151023AB00318F62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Bike Laps.app/Bike Laps";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bike Laps/Bike Laps-Prefix.pch";
+				INFOPLIST_FILE = "Bike LapsTests/Bike LapsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7956DA37151023AA00318F62 /* Build configuration list for PBXProject "Bike Laps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7956DA6E151023AB00318F62 /* Debug */,
+				7956DA6F151023AB00318F62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7956DA70151023AB00318F62 /* Build configuration list for PBXNativeTarget "Bike Laps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7956DA71151023AB00318F62 /* Debug */,
+				7956DA72151023AB00318F62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7956DA73151023AB00318F62 /* Build configuration list for PBXNativeTarget "Bike LapsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7956DA74151023AB00318F62 /* Debug */,
+				7956DA75151023AB00318F62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7956DA34151023AA00318F62 /* Project object */;
+}

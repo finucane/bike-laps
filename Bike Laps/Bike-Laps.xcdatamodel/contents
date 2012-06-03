@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1170" systemVersion="11D50" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Course" representedClassName="Course" parentEntity="Path" syncable="YES">
+        <attribute name="bestGPS" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <attribute name="courseTimeInterval" optional="YES" attributeType="Integer 32" defaultValueString="15" syncable="YES"/>
+        <attribute name="lapTimeInterval" optional="YES" attributeType="Double" defaultValueString="180" syncable="YES"/>
+        <attribute name="listOrder" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="maxSavedWorkouts" optional="YES" attributeType="Integer 32" defaultValueString="10" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" defaultValueString="Untitled" syncable="YES"/>
+        <relationship name="workouts" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Workout" inverseName="course" inverseEntity="Workout" syncable="YES"/>
+    </entity>
+    <entity name="Lap" representedClassName="Lap" parentEntity="Path" syncable="YES">
+        <relationship name="workout" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Workout" inverseName="laps" inverseEntity="Workout" syncable="YES"/>
+    </entity>
+    <entity name="Location" representedClassName="Location" syncable="YES">
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="path" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Path" inverseName="locations" inverseEntity="Path" syncable="YES"/>
+    </entity>
+    <entity name="Path" representedClassName="Path" isAbstract="YES" syncable="YES">
+        <attribute name="timestamp" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="locations" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Location" inverseName="path" inverseEntity="Location" syncable="YES"/>
+    </entity>
+    <entity name="Workout" representedClassName="Workout" syncable="YES">
+        <relationship name="course" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Course" inverseName="workouts" inverseEntity="Course" syncable="YES"/>
+        <relationship name="laps" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Lap" inverseName="workout" inverseEntity="Lap" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Course" positionX="160" positionY="192" width="128" height="150"/>
+        <element name="Lap" positionX="160" positionY="192" width="128" height="60"/>
+        <element name="Location" positionX="160" positionY="192" width="128" height="105"/>
+        <element name="Path" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="Workout" positionX="160" positionY="192" width="128" height="75"/>
+    </elements>
+</model>
